@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RS Architects</title>
+</head>
+<body>
+
+    <!------------------------------------------------NAVBAR------------------------------------------------------------------>
+    <nav class="navbar">
+        <a href="" style="float:left" ><strong>RS</strong>Architects</a>
+        <a href="#projects" class="invisible-nav-item"  style="float:right">Projects</a>
+        <a href="#about"  class="invisible-nav-item" style="float:right">About</a>
+        <a href="#contact" class="invisible-nav-item"  style="float:right">Contact</a>
+    </nav>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------->
+    <div class="container container1"></div>
+
+    <!----------------------------------------PROJECTS----------------------------------------------------------------------------->
+    <div class="container container2" id="projects">
+        <p class="heading">Projects</p>
+        <hr style="width:100%;""color:grey" height:100px>
+        <div class="image-collection">
+            <div>
+                <span>Duplex House</span>
+                <img src="images/duplex.png" alt="" width="100%" >
+            </div>
+            <div>
+                <span>Bunglow</span>
+                <img src="images/bunglow.png" alt="" width="100%" >
+            </div>
+            <div>
+                <span>Eco House</span>
+                <img src="images/ecoHome.png" alt="" width="100%" >
+            </div>
+            
+            <div>
+                <span>Renovated Home</span>
+                <img src="images/RenovetedHome.png" alt="" width="100%" >
+            </div>
+           
+          
+    </div>
+
+    <!-----------------------------------------------ABOUT-------------------------------------------------------------->
+    <div class="container container3" id="about" >
+        <p class="heading">About</p>
+        <hr style="width:100%;color:grey;margin-bottom:10px">
+        <p style="margin:10px;margin-bottom: 5px;font-size:16px;">Design is paramount in creating an architecture website that captivates visitors and showcases the firm's unique style and vision. Every element, from the layout to the color scheme, should harmonize to reflect the firm's aesthetic sensibilities. Clean, minimalist design principles often resonate well, allowing the projects to take center stage without distractions. High-quality images and videos play a crucial role in conveying the firm's portfolio, offering visitors a glimpse into the craftsmanship and attention to detail that define each project. Additionally, incorporating interactive elements, such as 360-degree views or virtual tours, can provide an immersive experience, allowing visitors to explore the firm's designs from different angles. With a focus on visual appeal and user experience, the design of the architecture website becomes a powerful tool for leaving a lasting impression and enticing potential clients.</p>
+        <div class="image-card-collection">
+            <div class="about-img-card">
+                <img src="images/rajveer shekhawat.png" alt="" width="100%">
+                <p class="heading">Rajveer Shekhawat</p>
+                <p class="about-image-card-designation">CEO & Founder</p>
+                <p class="about-image-card-desc">Their expertise and passion have propelled the firm to prominence, inspiring innovative projects that redefine the built environment.</p>
+                <b> </b>
+                <a href="rajveer_contact.html" class="about-image-card-button">CONTACT</a>
+            </div>
+            <div class="about-img-card">
+                <img src="images/isha.png" alt="" width="100%">
+                <p class="heading">Isha Lodha</p>
+                <p class="about-image-card-designation">Architect</p>
+                <p class="about-image-card-desc">Isha Lodha, architect, creativity with precision to reshape cityscapes. Known for innovative and sustainable designs, she leads her team with visionary insight.</p>
+                <a href="isha_contact.html" class="about-image-card-button">CONTACT</a>
+            </div>
+            <div class="about-img-card">
+                <img src="images/vaibhav dodeja.png" alt="" width="100%">
+                <p class="heading">Vaibhav dodeja</p>
+                <p class="about-image-card-designation">Architect</p>
+                <p class="about-image-card-desc">Renowned for pioneering designs, he leads his team with insight. Singh's architecture redefine skylines but also foster vibrant, eco-friendly communities.</p>
+                <a href="vaibhav_contact.html" class="about-image-card-button">CONTACT</a>
+            </div>
+            <div class="about-img-card">
+                <img src="images/arnav.png" alt="" width="100%">
+                <p class="heading">Arnav Singhania</p>
+                <p class="about-image-card-designation">Architect</p>
+                <p class="about-image-card-desc">Celebrated for his commitment to sustainability, he leads his team with innovative flair. Singhania's creations transcend mere structures.</p>
+                <a href="arnav_contact.html" class="about-image-card-button">CONTACT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------CONTACT------------------------------------------------------------------------>
+    <div class="container container4" id="contact">
+        <p class="heading">Contact</p>
+        <hr class="divider">
+        <div class="contact-content">
+            <p class="contact-description">Let's get in touch and talk about your next project.</p>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                <textarea id="comment" name="comment" placeholder="Comment" required></textarea><br>
+                <button type="submit" class="contact-button">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <!---------------------------------------------------Location --------------------------------------------------------------------------------->>
+    <div class="container container6" id="location" style="width: 100%;">
+    <h2>Location</h2>
+    <b> </b>
+    <!-- Paste the embedded Google Maps code here -->
+    <!-- Example -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172323.21208178572!2d73.6164910981106!3d18.712347359370682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c731c83fc059%3A0xbea9ebc15eaf8937!2sRS%20Architects!5e0!3m2!1sen!2sin!4v1713849681739!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+   
+
+    <!-----------------------------------------FOOTER--------------------------------------------------------------------------------->
+    <footer class="footer">Made by Aditya Shiledar and team</footer>
+
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+
+</body>
+</html>

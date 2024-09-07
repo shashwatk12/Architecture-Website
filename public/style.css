@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+    grid-template-areas: 
+    'navbar'
+    'container1'
+    'container2'
+    'container3'
+    'container4'
+    'container5'
+    'footer';
+    grid-gap:0.5rem;
+}
+.navbar{
+    grid-area:navbar;
+    height:8vh;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:1;
+    background-color:white;
+    box-shadow: 2px 5px grey;
+    /* border:1px solid black; */
+}
+.container1{
+grid-area:container1;
+border-left:15px solid black;
+background:url("images/home.jpg")no-repeat center center/cover;
+height:85vh;
+}
+.container2{
+    grid-area:container2;
+    height:45vw;
+    }
+.container3{
+ grid-area:container3;
+ height:45vw;
+        }
+.container4{
+ grid-area:container4;
+ height:25vw;
+            }
+
+.container{
+    padding:20px;
+    width:97.5vw;
+    margin:10px;
+    box-sizing:border-box;
+    /* border:1px solid green; */
+}
+.footer{
+  grid-area:footer;
+  height:5vw;
+  background-color:black;
+  color:white;
+  position:relative;
+  bottom:0;
+  text-align:center;
+  padding-top:20px;
+    /* border:1px solid red; */
+}
+
+/**************************************************************************navbar*******************************************************/
+a{
+color:black;
+text-decoration:none;
+    font-size:15px;
+   padding:20px 35px 20px 30px;
+   letter-spacing:3px;
+}
+/********************************************************************************************projects*******************************/
+.heading{
+    font-size:25px;
+    margin-top:25px;
+    margin-bottom:0px;
+}
+span{
+    position:relative;
+    top:30px;
+    color:white;
+    width:60px;
+    height:40px;
+    padding:10px;
+    background-color:black;
+}
+.image-collection{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap:1rem;
+    margin-top:40px;
+}
+
+/***********************************************************************about**************************************************/
+.about-image-card-designation{
+    color:grey;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.about-img-card-button {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    margin-top: 10px; /* Add margin top to create space between text and button */
+    background-color: black;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer; /* Add cursor pointer to indicate button interactivity */
+    text-align: center; /* Center the text horizontally within the button */
+}
+
+
+.image-card-collection{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px,1fr) );
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.about-img-card{
+width:350px;
+height:450px;
+}
+.about-img-card img {
+    height: auto;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    width: 100%; /* Ensures the image width adjusts automatically */
+}
+.image-collection div {
+    width: 100%;
+    text-align: center; /* Optional: centers the image and caption */
+}
+
+.image-collection img {
+    height: auto;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    width: 100%; /* Ensures the image width adjusts automatically */
+}
+.about-img-card {
+    margin-bottom: 20px; /* Add margin bottom to create space between image cards */
+}
+
+/* .about-img-card-button {
+    .about-image-card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+} */
+
+/* .about-image-card-button:hover {
+    background-color: #45a049;
+} */
+.about-image-card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-image-card-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+/*****************************************************************contact***************************************************************/
+input{
+    width:95%;
+    height:95%;
+    margin:10px;
+    padding-left:10px;
+    padding-right:10px;
+    color:grey;
+    font-size:16px;
+}
+.contact-button{
+    margin: 10px;
+    background-color:black;
+    border:none;
+    
+    padding:10px;
+    color:white;
+    font-size:17px;
+}
+.container4 {
+    grid-area: container4;
+    height:25vw; /* Change the height to auto to allow it to expand based on content */
+    /* Add padding to increase the overall size */
+}
+.container4 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 24px;
+    color: #333;
+}
+
+.divider {
+    width: 100%;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.contact-content {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.contact-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+@media only screen and (max-width:1500px){
+        body{
+            display:grid;
+            grid-template-areas: 
+            'navbar'
+            'container1'
+            'container2'
+            'container3'
+            'container4'
+            'container5'
+            'footer';
+            grid-gap:0.5rem;
+        }
+        .navbar{
+            height:8vh;
+            width:100%;
+            z-index:1;
+        }
+        .invisible-nav-item{
+            display:none;
+        }
+        .container1{
+            height:100vh;
+            padding-top:200px;
+            padding-bottom:200px;
+        }
+        .container2{
+            height:100%;
+            }
+        .container3{
+         height:100%;
+                }
+        .container4{
+         height:50vw;
+                    }
+        .container5{
+         height:100vh;
+         padding-top:200px;
+         padding-bottom:200px;
+        }
+        .container{
+            width:97vw;
+            height:100%;
+        }
+        .footer{
+            width:97vw;
+            margin-left:10px
+        }
+       
+        
+        
+}
